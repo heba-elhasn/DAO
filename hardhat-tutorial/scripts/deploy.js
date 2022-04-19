@@ -19,14 +19,12 @@ async function main() {
     {
       // This assumes your account has at least 1 ETH in it's account
       // Change this value as you want
-      value: ethers.utils.parseEther("1"),
+      value: ethers.utils.parseEther("0.1"),
     }
   );
   await cryptoDevsDAO.deployed();
-
-  console.log("CryptoDevsDAO deployed to: ", cryptoDevsDAO.address);
+    console.log("CryptoDevsDAO deployed to: ", cryptoDevsDAO.address);
 }
-
 main()
   .then(() => process.exit(0))
   .catch((error) => {
